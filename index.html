@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>AR 濾鏡體驗</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body { margin: 0; overflow: hidden; background: black; }
+    video, canvas { position: absolute; top: 0; left: 0; }
+    #snapshot { position: absolute; top: 10px; left: 10px; z-index: 10; }
+  </style>
+</head>
+<body>
+  <video id="video" autoplay muted playsinline></video>
+  <canvas id="overlay"></canvas>
+  <button id="snapshot">📸 拍照</button>
+  <canvas id="snap" style="display:none;"></canvas>
+</body>
+</html>
